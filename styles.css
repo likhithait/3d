@@ -1,0 +1,42 @@
+body {
+    background-color: #eaecee; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.text {
+    font-family: 'Georgia', serif;
+    font-size: 7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1a252f; 
+    position: relative;
+    text-shadow: 
+        2px 2px 0 #cfd8dc,
+        4px 4px 0 #b0bec5, 
+        6px 6px 0 #78909c, 
+        8px 8px 0 #546e7a, 
+        10px 10px 0 #37474f, 
+        12px 12px 0 #263238; 
+    transform: perspective(700px) rotateX(15deg) rotateY(-20deg);
+}
+.text::before {
+    content: "LIKHI";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #dfe6e9; 
+    z-index: -1;
+    transform: translateZ(-15px);
+}
+.text::after {
+    content: "LIKHI";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(26, 37, 47, 0.5);
+    z-index: -2;
+    transform: translateZ(-30px);
+}
